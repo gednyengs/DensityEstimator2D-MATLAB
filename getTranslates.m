@@ -34,6 +34,9 @@ rangeY = transRange{2};
 scalTranslates{1} = rangeX(1) : rangeX(2);
 scalTranslates{2} = rangeY(1) : rangeY(2);
 
+% Default value for the wavelet translates if waveletflag is OFF
+waveTranslates = false;
+
 if(waveletFlag == 1) % wavelet is on
    numWavelets = (stopLevel - startLevel) + 1;
    waveTranslates = cell(2, 1);
