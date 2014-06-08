@@ -3,12 +3,14 @@
 % Description: Finds the relevant coefficients corresponding to a sample.
 %
 % Inputs:
-%   sample            - Single sample value. 
+%   sample            - Single sample value in a given dimension. 
 %   lowerSupp         - Lower value of wavelet support.
 %   upperSupp         - Upper value of wavelet support.
 %   resolutLevel      - Current resolution level.
-%   coefficients      - Vector of coefficients.
-%   transVec          - Vector of translate values. 
+%   coefficients      - Vector of coefficients for the dimension at the given
+%                       resolution.
+%   transVec          - Vector of translate values for the dimension at the
+%                       given resolution level. 
 % 
 % Outputs:
 %   relevantCoeff     - Relevant coefficients corresponding to sample.
